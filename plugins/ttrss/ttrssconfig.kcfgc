@@ -1,0 +1,6 @@
+File=ttrssconfig.kcfg
+ClassName=TTRSSConfig
+Singleton=true
+NameSpace=Akregator
+Mutators=true
+MemberVariables=private
