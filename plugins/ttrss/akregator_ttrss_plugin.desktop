@@ -25,7 +25,7 @@ Name[gl]=Infraestrutura do almacenador TT-RSS
 Name[hu]=TT-RSS tároló
 Name[ia]=Retro-administration de immagazinage TT-RSS
 Name[is]=TT-RSS geymslu bakendi
-Name[it]=Backend archiviazione metakit
+Name[it]=Backend archiviazione ttrss
 Name[ja]=TT-RSS ストレージバックエンド
 Name[ka]=TT-RSS  მეხსიერების ბუფერი
 Name[kk]=TT-RSS сақтағыш тетігі
@@ -128,7 +128,7 @@ Comment[zh_TW]=Akregator 外掛程式
 X-KDE-ServiceTypes=Akregator/Plugin
 
 X-KDE-akregator-plugintype=storage
-X-KDE-akregator-name=metakit
+X-KDE-akregator-name=ttrss
 X-KDE-akregator-authors=Frank Osterfeld
 X-KDE-akregator-email=osterfeld@kde.org
 X-KDE-akregator-rank=255

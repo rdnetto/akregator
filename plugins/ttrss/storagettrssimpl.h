@@ -46,13 +46,13 @@ public:
     /** KGlobal::dirs()->saveLocation("data", "akregator")+"/Archive" */
     static QString defaultArchivePath();
 
-    /** sets the directory where the metakit files will be stored.
+    /** sets the directory where the ttrss files will be stored.
 
         @param archivePath the path to the archive, or QString() to reset it to the default.
      */
     void setArchivePath(const QString &archivePath);
 
-    /** returns the path to the metakit archives */
+    /** returns the path to the ttrss archives */
     QString archivePath() const;
 
     void initialize(const QStringList &params) override;

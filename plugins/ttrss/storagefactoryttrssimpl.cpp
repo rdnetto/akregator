@@ -39,12 +39,12 @@ Storage *StorageFactoryTTRSSImpl::createStorage(const QStringList &params) const
 
 QString StorageFactoryTTRSSImpl::key() const
 {
-    return QStringLiteral("metakit");
+    return QStringLiteral("ttrss");
 }
 
 QString StorageFactoryTTRSSImpl::name() const
 {
-    return i18n("Metakit");
+    return i18n("TT-RSS");
 }
 
 void StorageFactoryTTRSSImpl::configure()

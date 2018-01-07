@@ -86,6 +86,9 @@ public:
     FeedStorage *archiveFor(const QString &url) override;
     const FeedStorage *archiveFor(const QString &url) const override;
 
+    /**
+     * @return True if uncommitted changes are commited on close.
+     */
     bool autoCommit() const override;
     int unreadFor(const QString &url) const override;
     void setUnreadFor(const QString &url, int unread) override;
