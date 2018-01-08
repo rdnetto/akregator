@@ -1,7 +1,6 @@
 /*
     This file is part of Akregator.
-
-    Copyright (C) 2005 Frank Osterfeld <osterfeld@kde.org>
+    Copyright (c) 2018 Reuben D'Netto <rdnetto@gmail.com>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,30 +21,21 @@
     without including the source code for Qt in the source distribution.
 */
 
-#ifndef AKREGATOR_BACKEND_STORAGEFACTORYTTRSSIMPL_H
-#define AKREGATOR_BACKEND_STORAGEFACTORYTTRSSIMPL_H
+#ifndef CONNECTIONDETAILS_H
+#define CONNECTIONDETAILS_H
 
-#include "storagefactory.h"
-#include <QString>
-class QStringList;
+#include <QDialog>
 
 namespace Akregator {
-namespace Backend {
-class Storage;
-
-class StorageFactoryTTRSSImpl : public StorageFactory
+class ConnectionDetails : public QDialog
 {
-public:
-    QString key() const override;
-    QString name() const override;
-    void configure() override;
-    Storage *createStorage(const QStringList &params) const override;
-    bool isConfigurable() const override
-    {
-        return true;
-    }
-};
-} // namespace Backend
-} // namespace Akregator
+    Q_OBJECT
 
-#endif // AKREGATOR_BACKEND_STORAGEFACTORYTTRSSIMPL_H
+public:
+    ConnectionDetails(QWidget* parent = NULL);
+
+private:
+};
+
+} //namespace Akregator
+#endif // CONNECTIONDETAILS_H
