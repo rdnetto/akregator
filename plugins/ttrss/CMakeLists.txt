@@ -27,6 +27,7 @@ set(akregator_ttrss_plugin_PART_SRCS
 
 add_library(akregator_ttrss_plugin MODULE ${akregator_ttrss_plugin_PART_SRCS})
 
+set_target_properties(akregator_ttrss_plugin PROPERTIES LINKER_LANGUAGE CXX)
 target_link_libraries(akregator_ttrss_plugin
     KF5::Syndication
     akregatorinterfaces
