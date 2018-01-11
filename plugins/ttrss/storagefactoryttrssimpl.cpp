@@ -23,6 +23,7 @@
 */
 #include "storagefactoryttrssimpl.h"
 #include "storagettrssimpl.h"
+#include "connection_details.h"
 
 #include <KLocalizedString>
 #include <QString>
@@ -47,8 +48,14 @@ QString StorageFactoryTTRSSImpl::name() const
     return i18n("TT-RSS");
 }
 
-void StorageFactoryTTRSSImpl::configure()
+void StorageFactoryTTRSSImpl::configure(QWidget *parent)
 {
+    ConnectionDetails *diag = new ConnectionDetails(parent);
+    diag->exec();
+    
+    // should use kcfg files for this
+    // TODO: load existing settings in constructor
+    // TODO: persist settings - hook into accepted signal on qdialog
 }
 } // namespace Backend
 } // namespace Akregator

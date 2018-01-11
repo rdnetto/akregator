@@ -25,9 +25,10 @@
 #define CONNECTIONDETAILS_H
 
 #include <QDialog>
+#include "ui_connection_details.h"
 
 namespace Akregator {
-class ConnectionDetails : public QDialog
+class ConnectionDetails : public QDialog, public Ui::ConnectionDetails
 {
     Q_OBJECT
 

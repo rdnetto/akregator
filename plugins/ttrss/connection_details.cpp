@@ -26,6 +26,7 @@
 using namespace Akregator;
 
     Akregator::ConnectionDetails::ConnectionDetails(QWidget* parent) : QDialog(parent) {
+        setupUi(this);
         // TODO: signals/slots
         // TODO: move button from form into buttonbox
     }

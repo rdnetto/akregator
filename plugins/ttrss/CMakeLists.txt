@@ -6,19 +6,16 @@ include_directories(
     ${akregator_BINARY_DIR}
     )
 
+SET( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -g " )
+
 ########### next target ###############
-# TODO: implement
 
-set(connection_details_SRCS
-    connection_details.cpp
-    )
-
+set(connection_details_SRCS connection_details.cpp)
 ki18n_wrap_ui(connection_details_SRCS ui/connection_details.ui)
 
-########### next target ###############
-
 set(akregator_ttrss_plugin_PART_SRCS
-    connection_details_SRCS
+    ${connection_details_SRCS}
+    connection_details.cpp
     feedstoragettrssimpl.cpp
     storagettrssimpl.cpp
     storagefactoryttrssimpl.cpp
