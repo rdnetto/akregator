@@ -1,5 +1,6 @@
 /*
     This file is part of Akregator.
+
     Copyright (c) 2018 Reuben D'Netto <rdnetto@gmail.com>
 
     This program is free software; you can redistribute it and/or modify
