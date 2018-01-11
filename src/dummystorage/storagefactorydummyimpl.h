@@ -40,7 +40,7 @@ class AKREGATORPART_EXPORT StorageFactoryDummyImpl : public StorageFactory
 public:
     QString key() const override;
     QString name() const override;
-    void configure() override;
+    void configure(QWidget *parent) override;
     bool isConfigurable() const override
     {
         return false;

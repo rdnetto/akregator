@@ -38,7 +38,7 @@ class StorageFactoryMK4Impl : public StorageFactory
 public:
     QString key() const override;
     QString name() const override;
-    void configure() override;
+    void configure(QWidget *parent) override;
     Storage *createStorage(const QStringList &params) const override;
     bool isConfigurable() const override
     {

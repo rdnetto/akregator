@@ -29,6 +29,8 @@
 
 class QString;
 class QStringList;
+class QWidget;
+
 namespace Akregator {
 namespace Backend {
 class Storage;
@@ -52,7 +54,7 @@ public:
     virtual bool isConfigurable() const = 0;
 
     /** shows the plugin's configuration dialog */
-    virtual void configure() = 0;
+    virtual void configure(QWidget *parent) = 0;
 
     /** creates a storage object with given parameters
         @param params list of implementation-specific parameters

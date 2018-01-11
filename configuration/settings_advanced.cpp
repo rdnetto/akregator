@@ -82,7 +82,7 @@ void SettingsAdvanced::slotConfigureStorage()
     if (!key.isEmpty()) {
         Backend::StorageFactory *const factory = m_factories.value(key);
         Q_ASSERT(factory);
-        factory->configure();
+        factory->configure(this);
     }
 }
 

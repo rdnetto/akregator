@@ -47,7 +47,7 @@ QString StorageFactoryMK4Impl::name() const
     return i18n("Metakit");
 }
 
-void StorageFactoryMK4Impl::configure()
+void StorageFactoryMK4Impl::configure(QWidget *parent)
 {
 }
 } // namespace Backend

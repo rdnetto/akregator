@@ -47,8 +47,6 @@ QString StorageFactoryDummyImpl::name() const
     return i18n("No Archive");
 }
 
-void StorageFactoryDummyImpl::configure()
-{
-}
+void Akregator::Backend::StorageFactoryDummyImpl::configure(QWidget* parent) {}
 }
 }
